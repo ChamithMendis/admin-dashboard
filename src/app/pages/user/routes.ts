@@ -3,17 +3,17 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'profile',
     pathMatch: 'full',
   },
   {
-    path: 'dashboard',
+    path: 'profile',
     loadComponent: () =>
-      import('./dashboard/dashboard.component').then(
-        (m) => m.DashboardComponent
+      import('./user-profile/user-profile.component').then(
+        (m) => m.UserProfileComponent
       ),
     data: {
-      title: 'Dashboard',
+      title: 'Profile',
     },
   },
 ];
