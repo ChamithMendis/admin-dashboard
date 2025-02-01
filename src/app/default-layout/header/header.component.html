@@ -14,8 +14,16 @@
     aria-label="Example icon-button with heart icon"
     matTooltip="Notifications"
     (click)="onNotificationIconClick()"
+    [matMenuTriggerFor]="notificationList"
   >
     <mat-icon matBadge="{{ noOfNotifications }}">notifications</mat-icon>
+    <mat-menu #notificationList="matMenu" xPosition="before">
+      @for (notification of notifications; track $index) {
+      <button mat-menu-item (click)="onNotificationItemClick(notification)">
+        {{ notification.message }}
+      </button>
+      }
+    </mat-menu>
   </button>
   <button
     mat-icon-button
