@@ -6,7 +6,7 @@
 }
 
 .profile-header {
-  background: linear-gradient(45deg, #007bff, #6610f2);
+  background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
   color: white;
   padding: 20px;
   border-top-left-radius: 15px;
@@ -40,20 +40,28 @@
 .settings-section {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+  padding: 10px;
 
   .container {
-    max-width: 800px;
+    max-width: 100%;
     background: #fff;
     width: 800px;
     padding: 25px 40px 10px 40px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
   }
-  .container .text {
-    text-align: center;
+  .container .profile-text {
+    padding-top: 10px;
+    padding-bottom: 20px;
     font-size: 41px;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
-    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    background: -webkit-linear-gradient(45deg, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -83,9 +91,7 @@
     border-bottom: 2px solid rgba(0, 0, 0, 0.12);
   }
   .input-data input:focus ~ label,
-  .textarea textarea:focus ~ label,
-  .input-data input:valid ~ label,
-  .textarea textarea:valid ~ label {
+  .textarea textarea:focus ~ label {
     transform: translateY(-20px);
     font-size: 14px;
     color: #3498db;
@@ -123,9 +129,7 @@
     transition: transform 0.3s ease;
   }
   .input-data input:focus ~ .underline:before,
-  .input-data input:valid ~ .underline:before,
-  .textarea textarea:focus ~ .underline:before,
-  .textarea textarea:valid ~ .underline:before {
+  .textarea textarea:focus ~ .underline:before {
     transform: scale(1);
   }
   .input-data input:focus {

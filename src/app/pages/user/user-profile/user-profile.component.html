@@ -75,32 +75,60 @@
         >
           <!-- <div class="text">Settings</div> -->
           <div class="container">
-            <form action="#">
-              <div class="form-row">
-                <div class="input-data">
-                  <input type="text" required />
-                  <div class="underline"></div>
-                  <label for="">First Name</label>
+            <div class="row">
+              <div class="profile-text">Profile Settings</div>
+            </div>
+            <div class="row">
+              <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+                <div class="form-row">
+                  <div class="input-data">
+                    <input type="text" formControlName="firstName" />
+                    <div class="underline"></div>
+                    <label for="">First Name</label>
+                  </div>
+                  <div class="input-data">
+                    <input type="text" formControlName="secondName" />
+                    <div class="underline"></div>
+                    <label for="">Second Name</label>
+                  </div>
+                  <div class="input-data">
+                    <input type="text" formControlName="lastName" />
+                    <div class="underline"></div>
+                    <label for="">Last Name</label>
+                  </div>
                 </div>
-                <div class="input-data">
-                  <input type="text" required />
-                  <div class="underline"></div>
-                  <label for="">Last Name</label>
+                <div class="form-row">
+                  <div class="input-data">
+                    <input type="text" formControlName="userName" />
+                    <div class="underline"></div>
+                    <label for="">User Name</label>
+                  </div>
+
+                  <div class="input-data">
+                    <input type="email" formControlName="email" />
+                    <div class="underline"></div>
+                    <label for="">Email</label>
+                  </div>
                 </div>
-              </div>
-              <div class="form-row">
-                <div class="input-data">
-                  <input type="text" required />
-                  <div class="underline"></div>
-                  <label for="">Email Address</label>
+                <div class="form-row">
+                  <div class="input-data">
+                    <input type="text" formControlName="age" />
+                    <div class="underline"></div>
+                    <label for="">Age</label>
+                  </div>
+                  <div class="input-data">
+                    <input type="text" formControlName="dob" />
+                    <div class="underline"></div>
+                    <label for="">Date of Birth</label>
+                  </div>
+                  <div class="input-data">
+                    <input type="text" formControlName="occupation" />
+                    <div class="underline"></div>
+                    <label for="">Occupation</label>
+                  </div>
                 </div>
-                <div class="input-data">
-                  <input type="text" required />
-                  <div class="underline"></div>
-                  <label for="">Website Name</label>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
         <div class="tab-pane fade" id="activity" role="tabpanel">

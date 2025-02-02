@@ -2,34 +2,36 @@ h1 {
     padding: 0 1rem;
 }
 
-h2 {padding: 1rem;}
+h2 {
+    padding: 1rem;
+}
 
 mat-sidenav-container {
-    height:97%;
+    height: 97%;
 }
 
 // Move the content down so that it won't be hidden by the toolbar
 mat-sidenav {
     // background-color:  rgb(211, 67, 196);
-    background: linear-gradient(45deg, #007bff, #6610f2);;
+    background: linear-gradient(45deg, #007bff, #6610f2);
     padding-top: 3.5rem;
     @media screen and (min-width: 600px) {
-      padding-top: 4rem;
+        padding-top: 4rem;
     }
 
-    .entry{
+    .entry {
         display: flex;
         align-items: center;
         gap: 0.3rem;
-        padding:0.75rem;
+        padding: 0.75rem;
         color: white;
         font-size: 0.7rem;
 
         mat-icon {
-            font-size: 1.3rem;   
+            font-size: 1.3rem;
         }
     }
-  }
+}
 
 .page-content {
     // padding: 1.2%;
@@ -38,7 +40,7 @@ mat-sidenav {
 }
 
 // Move the content down so that it won't be hidden by the toolbar
-mat-sidenav-content{
+mat-sidenav-content {
     padding-top: 3.5rem;
     @media screen and (min-width: 600px) {
         padding-top: 4rem;
