@@ -1,4 +1,4 @@
-<div class="container">
+<div>
   <div class="card profile-card">
     <div class="profile-header text-center">
       <img
@@ -52,7 +52,7 @@
           </button>
         </li>
       </ul>
-      <div class="tab-content" id="profileTabsContent">
+      <div class="tab-content" id="profileTabsContent tab-styles">
         <div class="tab-pane fade show active" id="about" role="tabpanel">
           <h5>About</h5>
           <p>
@@ -68,117 +68,39 @@
             around him to follow their dreams.
           </p>
         </div>
-        <div class="tab-pane fade" id="settings" role="tabpanel">
-          <h5>Settings</h5>
-          <div class="settings-container">
-            <div class="form-section">
-              <form
-                [formGroup]="profileForm"
-                class="example-form"
-                (ngSubmit)="onSubmit()"
-              >
-                <div style="display: flex; flex-direction: column">
-                  <div
-                    style="
-                      display: flex;
-                      flex-direction: row;
-                      margin-bottom: 1%;
-                    "
-                  >
-                    <div class="full-width">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <mat-label>First Name</mat-label>
-                        </div>
-                        <div class="col-md-6">
-                          <input
-                            matInput
-                            placeholder="First Name"
-                            value="First Name"
-                            formControlName="firstName"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="full-width">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <mat-label>Second Name</mat-label>
-                        </div>
-                        <div class="col-md-6">
-                          <input
-                            matInput
-                            placeholder="Second Name"
-                            value="Sushi"
-                            formControlName="secondName"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="full-width">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <mat-label>Last Name</mat-label>
-                        </div>
-                        <div class="col-md-6">
-                          <input
-                            matInput
-                            placeholder="Last Name"
-                            value="Sushi"
-                            formControlName="lastName"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div style="display: flex; flex-direction: row">
-                    <div class="full-width">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <mat-label>Age</mat-label>
-                        </div>
-                        <div class="col-md-6">
-                          <input
-                            matInput
-                            placeholder="Age"
-                            value="Sushi"
-                            formControlName="age"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="full-width">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <mat-label>Date of Birth</mat-label>
-                        </div>
-                        <div class="col-md-6">
-                          <input
-                            matInput
-                            placeholder="DOB"
-                            value="Sushi"
-                            formControlName="dob"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="full-width">
-                      <div class="row">
-                        <div class="col-md-6"><mat-label>Email</mat-label></div>
-                        <div class="col-md-6">
-                          <input
-                            matInput
-                            placeholder="Email"
-                            value="Sushi"
-                            formControlName="email"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+        <div
+          class="tab-pane fade settings-section"
+          id="settings"
+          role="tabpanel"
+        >
+          <!-- <div class="text">Settings</div> -->
+          <div class="container">
+            <form action="#">
+              <div class="form-row">
+                <div class="input-data">
+                  <input type="text" required />
+                  <div class="underline"></div>
+                  <label for="">First Name</label>
                 </div>
-              </form>
-            </div>
+                <div class="input-data">
+                  <input type="text" required />
+                  <div class="underline"></div>
+                  <label for="">Last Name</label>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="input-data">
+                  <input type="text" required />
+                  <div class="underline"></div>
+                  <label for="">Email Address</label>
+                </div>
+                <div class="input-data">
+                  <input type="text" required />
+                  <div class="underline"></div>
+                  <label for="">Website Name</label>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
         <div class="tab-pane fade" id="activity" role="tabpanel">
