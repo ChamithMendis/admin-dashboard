@@ -36,3 +36,18 @@
         .nav-item {
             margin: 0.5%;
         }
+
+.settings-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.form-section {
+    flex: 1;
+    padding: 5px;
+}
+
+.full-width {
+    width: 100%;
+  }
