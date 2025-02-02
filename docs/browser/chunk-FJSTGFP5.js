@@ -1,0 +1,1 @@
+import"./chunk-7CGTOI24.js";var t=[{path:"",redirectTo:"profile",pathMatch:"full"},{path:"profile",loadComponent:()=>import("./chunk-N5CDKBXG.js").then(o=>o.UserProfileComponent),data:{title:"Profile"}}];export{t as routes};

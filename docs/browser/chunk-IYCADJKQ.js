@@ -1,0 +1,1 @@
+import"./chunk-7CGTOI24.js";var t=[{path:"",redirectTo:"dashboard",pathMatch:"full"},{path:"dashboard",loadComponent:()=>import("./chunk-6AXP25CE.js").then(o=>o.DashboardComponent),data:{title:"Dashboard"}}];export{t as routes};
